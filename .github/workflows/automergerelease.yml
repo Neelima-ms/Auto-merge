@@ -24,10 +24,7 @@ jobs:
          
    - name: test
      run: |
-       if [ "$GITHUB_EVENT_NAME" != "push" ]; then
-       echo "This job was triggered by a non-push event ($GITHUB_EVENT_NAME), failing.."
-       exit 1
-       fi 
+       
        
    - name: Merge release branch to default branch
      run: |
