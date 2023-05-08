@@ -23,7 +23,7 @@ jobs:
          echo "MASTER_BRANCH=$(git rev-parse --abbrev-ref HEAD)" >> $GITHUB_ENV
          
    - name: test
-     run: |
+     run: sample
        
        
    - name: Merge release branch to default branch
